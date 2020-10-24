@@ -1,2 +1,75 @@
 # LawTech
 http://localhost:8888/notebooks/LawTech_HW_07141311.ipynb#
+LawTech HW1
+繳交檔名：LawTech_HW1_學號
+一、字串處理
+請用「空白鍵」當作切割符，對 test1變數做切割，並將Zombie、boys、Vampire這幾個單詞抓出來，使用字串格式化的方式產生下面的句子
+
+Oh! boys, please don't fear Zombie and Vampire.
+
+test1 = "Zombie stories are life lessons for boys who don't mind thinking about bodies, but can't cope with emotions. \
+Vampire stories are in many ways sex for the squeamish."
+a=test1[0:6]
+print(a) 
+Zombie
+b=test1[36:40]
+print(b)
+boys
+c=test1[109:116]
+print(c)
+Vampire
+print('Oh!{}'',please don\'t fear {}'' and {}.'.format(b,a,c) )
+Oh!boys,please don't fear Zombie and Vampire.
+二、Index索引練習
+請將 List 中的數字抓出，並算出總合為多少
+
+List = [23, 'red', 3, ['15', 'apple', [3, '3.5']], '27', [90, 'fight']]
+print(List[0])
+23
+print(List[2])
+3
+print(List[3][0])
+15
+print(List[3][2][0])
+3
+print(List[3][2][1])
+3.5
+print(List[4])
+27
+print(List[5][0])
+90
+print(23+3+15+3+3.5+27+90)
+164.5
+三、資料存取練習
+​
+ㄎ請設計一個資料結構（dict of list），來儲存以下數據
+
+Jay--M--170
+
+Bill--M--189
+
+Alice--F--160
+
+May--F--158
+
+Max--M--185
+
+Ann--F--148
+
+Dabby--F--150
+
+Steve--M--180
+
+Jet--M--173
+
+Amy--F--156
+
+並計算這10人的身高平均
+
+sum()：合計function
+
+dict1={'Jay':170,'Bill':189,'Alice':160,'May':158,'Max':185,'Ann':148,'Dabby':150,'Steve':180,'Jet':173,'Amy':156}
+print(dict1.values())
+dict_values([170, 189, 160, 158, 185, 148, 150, 180, 173, 156])
+sum(dict1.values())/len(dict1)
+166.9
